@@ -13571,11 +13571,11 @@ class HeaderLoteriaComponent {
     }
     ngOnChanges() {
         this.resultado.dezenas = [];
-        this.carregaResultado();
+        this.carregaResultado(true);
     }
-    carregaResultado() {
+    carregaResultado(consultarAPI = false) {
         let resultado = sessionStorage.getItem(app_shared_models_sessionstorage_model__WEBPACK_IMPORTED_MODULE_1__.ESessionLoteria.RESULTADO_ULTIMO + this.jogo);
-        if (resultado) {
+        if (resultado && !consultarAPI) {
             this.resultado = JSON.parse(resultado);
             if (this.ultimoResultado === 0) {
                 this.ultimoResultado = this.resultado.concurso;
