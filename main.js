@@ -14259,7 +14259,7 @@ const environment = {
     nomeSistema: 'TO DO Sorte',
     apiAutenticacao: 'https://api.todosorte.com.br',
     version: '1.0.0 - 20240201',
-    apiResultados: 'https://api-loteria.servicosmsc.com.br/api',
+    apiResultados: 'https://loteriascaixa-api.herokuapp.com/api',
     apiJogos: 'https://api-jogos.servicosmsc.com.br/api',
 };
 
